@@ -1,4 +1,4 @@
-
+# to na prawdę ładny robaczek :)
 
 def setup():
     size( 500, 600)
@@ -11,10 +11,10 @@ def setup():
     x=250
     y=300
     frameRate(10)
-    global slownik
+    #global slownik
     global natezenie
     natezenie= 0 
-    slownik = {"różowy": (255,144,99), "niebieski":(108,88,214), "fioletowy":(209,137,214), "pomarańczowy":(209,137,9)}
+    #slownik = {"różowy": (255,144,99), "niebieski":(108,88,214), "fioletowy":(209,137,214), "pomarańczowy":(209,137,9)}
 def draw():
     global natezenie 
     global x
@@ -32,7 +32,7 @@ def draw():
     if y<0:
         wayy=10
         
-    kolory = ((255,44,99), (108,88,214),(209,137,214), (209,137,9))
+#    kolory = ((255,44,99), (108,88,214),(209,137,214), (209,137,9))
     noStroke()
     fill(natezenie, random(255), random(255))
     natezenie= natezenie +1
@@ -42,4 +42,6 @@ def draw():
     
     if mousePressed:
         exit()
-    
+ 
+# kolory de facto z randoma, nie użyłaś stworzonych tablic
+# 1,5pkt
