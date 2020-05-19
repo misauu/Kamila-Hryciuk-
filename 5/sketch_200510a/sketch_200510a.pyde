@@ -21,22 +21,27 @@ class Pilka() :
             fill(255,255, 0)
         else:
             fill(255,50,50)
-        
-            
             
             
 def setup():
     size(400,400)
-    global zmiana_koloru
-    zmiana_koloru= Pilka(width/2, height/2, 50)
+    global pilki
+    p1= Pilka(width/2, height/2, 50)
+    p2 = Pilka(width/4, height/4, 20) # obiekty miały być dwa
+    pilki = (p1, p2) # warto je spiąć w kolekcję by późnieij nie powtarzać na każdym obiekcie wszystkich wywołań
 
 def mouseClicked():
-    zmiana_koloru.press()
+    pilki[0].press()
     
 def mouseWheel(event):
-    zmiana_koloru.obroc(15)
+    for pilka in pilki:
+        pilka.obroc(15)
     
 def draw():
     background(0,0,62)
-    zmiana_koloru.rysuj()
+    for pilka in pilki:
+        pilka.rysuj()
     print('Odbicia pilki:',Pilka.odbicia_pilki)
+    
+# zmieniona została głównie graficzna reprezentacja, natomiast atrybuty i metody są kalką z mojego programu, a o kreatywność głównie na tym polu mi chodziło
+# 1,25pkt
