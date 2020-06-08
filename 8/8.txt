@@ -1,11 +1,7 @@
-NazwaKlasy Library()
-atrybut_klasy availableBooks = list()
-atrybut self.availableBooks = listOfBooks
-metoda lendbook
-       displayAvailableBooks
-       addBook
-NazwaKlasy Customer()
-metoda requestBook
-       returnBook
+Bankomat
+pieniadze_w_bankomacie
+interakcja z bankomatem
+wpłata
 
-#nie wiedziałam czy podać jedną metodę czy wszystkie więc podałam wszystkie 
+Klient
+wpłata
