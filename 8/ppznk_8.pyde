@@ -37,7 +37,7 @@ class Customer():
 
 def setup():
     size(220,100)
-    global library, Madzia
+    global library, Kamila
     books = ["Naocznosc", "Sens Sztuki", "Seria Niefortunnych Zdarzeń", "Harry Potter"]
     library = Library(books) 
     Kamila = Customer()
@@ -54,6 +54,6 @@ def draw():
 def mouseClicked(): 
     if mouseX >100 and mouseX<200:
         if mouseY >10 and mouseY <30:
-            library.lendBook(Madzia.requestBook("Naocznosc"))
+            library.lendBook(Kamila.requestBook("Naocznosc"))
         if mouseY >40 and mouseY <60:
-            library.addBook(Madzia.returnBook())
+            library.addBook(Kamila.returnBook())
