@@ -3,5 +3,8 @@ pieniadze_w_bankomacie
 interakcja z bankomatem
 wpłata
 
-Klient
+Klient # lepsza byłąby karta, bo klient może mieć ileś kont, a do karty jest jedno
 wpłata
+
+wypłata, saldo, zmaina pin...?
+0,5/1,5pkt za tą część
