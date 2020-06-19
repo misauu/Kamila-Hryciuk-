@@ -59,3 +59,4 @@ def mouseClicked():
             pet.gimmePaw()
         if isinstance(pet, Kotek):
             pet.gimmeNozka()
+# 2 pkt
