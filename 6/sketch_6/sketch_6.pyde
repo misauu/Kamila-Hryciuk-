@@ -56,4 +56,4 @@ def setup():
     duzyKociKwadrat =KociKwadrat(150.0)
     duzyKociKwadrat.sketchKoci(100,170, 30)
     
-    
+# 2pkt
