@@ -61,14 +61,15 @@ def mouseClicked():
         if mouseY >40 and mouseY <60:
             library.addBook(Kamila.returnBook())
             
-class test(unittest.TestCase):
-    global library, Kamila
-    books = ["Naocznosc", "Sens Sztuki", "Seria Niefortunnych Zdarzeń", "Harry Potter"]
-    library = Library(books)
-    Kamila = Customer()
+class test(unittest.TestCase): 
     
     def testKsiazeczki(self):
+        Kamila = Customer()
         self.assertFalse(Kamila.haveBook)
         
     def testbiblioteczki(self):
+        books = ["Naocznosc", "Sens Sztuki", "Seria Niefortunnych Zdarzeń", "Harry Potter"]
+        library = Library(books)
         self.assertTrue(library.availableBooks !=[])
+        
+# 1,75pkt
